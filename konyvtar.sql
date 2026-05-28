@@ -27,3 +27,10 @@ CREATE TABLE rendeles_tetelek (
     FOREIGN KEY (rendeles_id)
         REFERENCES rendelesek(rendeles_id)
 );
+
+CREATE TABLE konyvek (
+    konyv_id INT AUTO_INCREMENT PRIMARY KEY,
+    cim VARCHAR(200),
+    szerzo VARCHAR(100),
+    elerheto BOOLEAN DEFAULT TRUE
+);
